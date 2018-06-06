@@ -1,0 +1,157 @@
+* {
+  font-family: 'Dancing';
+}
+body{
+
+background: #02010a;
+margin: 0 10% 0 10% ; /*mejorar*/
+}
+@font-face {
+  font-family: 'Dancing';
+  src: url('../fuentes/DancingScript-Regular.otf');
+}
+
+header{
+  font-family: 'Dancing';
+  background: #5b7989;
+  color: white;
+  text-shadow: 0 0 2px #02010a;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+}
+header h1{
+  font-size: 2.5em;
+}
+div{
+    font-size: 1.2em;
+}
+nav{
+  text-align: right;
+}
+nav a{
+  font-size: 1.8em;
+  text-decoration:none; /*mejorar*/
+}
+.icentral{
+background: #82c3a6;
+padding: 3%;
+width: auto;
+}
+.imagenc{
+	width:100%;
+  box-shadow: 2px 2px 2px #02010a;
+
+}
+#contenido{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+}
+.isecundaria{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  flex-direction: row; /*(version Movil) flex-direction: column*/
+  background: #d5c75f;
+}
+.isecundaria a{
+  font-size: 1.5em;
+}
+.isecundaria div {
+  padding: 3%;
+}
+
+.imagens1{
+  width:100%;
+  box-shadow: 2px 2px 2px #02010a;
+  cursor: pointer;
+}
+.imagens1:hover{
+  transition: 2s;
+  transform: rotate(10deg);
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+   box-shadow: 2px 2px 2px #82c3a6;
+   border: 2px;
+}
+
+.imagens2{
+  width:100%;
+  box-shadow: 2px 2px 2px #02010a;
+  cursor: pointer;
+}
+
+.imagens2:hover{
+  transition: 2s;
+  transform: translate(20px, -5px);
+  -ms-transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+    border: 2px;
+}
+h2{
+  text-align: left;
+}
+footer{
+  background: #C6d5c5;
+  border-radius:  0 0 10px 10px;
+}
+footer img{
+vertical-align: middle;
+}
+.contenidoF{
+  display: flex;
+  text-align: left;
+  justify-content:space-around;
+}
+.redes{
+  background: #b4d2f7;
+}
+.contacto{
+background:  #0062d2;
+}
+.imagensr1{
+  width:100%;
+  -webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+
+.imagensr2, .imagensr4, .imagensr6{
+  width:100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.imagensr3{
+  width: 100%;
+-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+
+.imagensr5{
+width:100%;
+}
+
+@media (max-width: 900px) {
+  header h1{
+    font-size: 2.8em;
+  }
+  nav{
+    font-size: 1.0em;
+  }
+div{
+    font-size: 1.8em;
+}
+  .isecundaria{
+    flex-direction: column;
+  }
+.contenidoF{
+  flex-direction: column;
+}
+footer p{
+  font-size: 1.2em;
+  }
+}
