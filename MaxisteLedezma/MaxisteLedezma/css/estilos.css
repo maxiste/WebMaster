@@ -1,0 +1,195 @@
+* {
+  font-family: 'Dancing';
+}
+body{
+
+background: #02010a;
+margin: 0 10% 0 10% ; /*mejorar*/
+}
+@font-face {
+  font-family: 'Dancing';
+  src: url('../fuentes/DancingScript-Regular.otf');
+}
+
+header{
+
+  background: #5b7989;
+  color: white;
+  text-shadow: 0 0 2px #02010a;
+  border-radius: 10px 10px 0 0;
+  padding: 5px;
+}
+
+header h1{
+  font-size: 2.5em;
+}
+div{
+    font-size: 1.2em;
+}
+nav{
+  text-align: right;
+}
+nav a{
+  font-weight: bold;
+  color: white;
+  font-size: 1.8em;
+  padding-left: 2%;
+}
+.current{
+  text-decoration: none;
+}
+
+.icentral{
+background: #82c3a6;
+padding: 3%;
+width: auto;
+}
+.imagenc{
+	width:100%;
+  box-shadow: 2px 2px 2px #02010a;
+
+}
+#contenido{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+
+}
+.isecundaria{
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  flex-direction: row; /*(version Movil) flex-direction: column*/
+  background: #d5c75f;
+}
+.isecundaria a{
+  color: black;
+  font-size: 1.5em;
+}
+
+.isecundaria div {
+  padding: 3%;
+}
+/*Animacion*/
+header{
+  animation-name: ReboteH;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes ReboteH{
+  0% {
+  position: relative;
+  margin-top: 150%;
+  }
+  60% {
+  position: relative;
+  margin-top: -5%;
+  }
+  100% {
+  position: relative;
+  margin-top: 0%;
+  }
+}
+
+.imagens1{
+  width:100%;
+  box-shadow: 2px 2px 2px #02010a;
+  cursor: pointer;
+}
+.imagens1:hover{
+  transition: 2s;
+  transform: rotate(10deg);
+	-ms-transform: rotate(10deg); /* IE 9 */
+	-webkit-transform: rotate(10deg); /* Chrome, Safari, Opera */
+   box-shadow: 2px 2px 2px #82c3a6;
+   border: 2px;
+}
+
+.imagens2{
+  width:100%;
+  box-shadow: 2px 2px 2px #02010a;
+  cursor: pointer;
+}
+
+.imagens2:hover{
+  transition: 2s;
+  transform: translate(20px, -5px);
+  -ms-transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+    border: 2px;
+}
+h2{
+  text-align: left;
+}
+footer{
+  background: #C6d5c5;
+  border-radius:  0 0 10px 10px;
+
+}
+footer img{
+vertical-align: middle;
+}
+
+.contenidoF{
+  display: flex;
+  text-align: left;
+  justify-content:space-around;
+  padding-left: 5%;
+
+}
+
+.imagensr1{
+  width:100%;
+  -webkit-filter:blur(10px);
+	filter:blur(10px);
+}
+
+.imagensr2, .imagensr4, .imagensr6{
+  width:100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.imagensr3{
+  width: 100%;
+-webkit-filter:sepia(90%);
+	filter:sepia(90%);
+}
+
+.imagensr5{
+width:100%;
+}
+
+@media (max-width: 900px) {
+  header h1{
+    text-align: center;
+    font-size: 2.8em;
+  }
+  nav{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.0em;
+  }
+div{
+    font-size: 1.8em;
+}
+  .isecundaria{
+    flex-direction: column;
+  }
+  .isecundaria a{
+    color: black;
+    font-size: 0.8em;
+  }
+.contenidoF{
+  flex-direction: column;
+}
+h2{
+  font-size: 1.2em;
+}
+footer p{
+  font-size: .9em;
+  }
+}
