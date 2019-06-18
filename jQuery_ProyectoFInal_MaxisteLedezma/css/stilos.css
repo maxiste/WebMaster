@@ -1,0 +1,171 @@
+/*
+Css, Proyecto Final Maxiste Ledezma jQuery
+06/06/2019
+*/
+
+/*Definicion de Font Propia */ 
+
+* {
+  font-family: 'Dancing';
+    src: url('../font/DancingScript-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Dancing';
+    src: url('../font/DancingScript-Regular.otf');
+}
+body{
+
+background: #09080f;
+margin: 0 30% 0 30% ; 
+
+}
+header{
+  margin-top: 2%;
+  background: #a1c6da;
+  color: white;
+  text-shadow: 0 0 2px #8ad1d8;
+  border-radius: 10px 10px 0 0;
+  padding: 10px;
+}
+/* nuevo Codigo 1 */
+#formularioEstudiantes form{
+    
+        text-align: left;
+        color: white;
+        font-size: 1.2em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#formularioEstudiantes input{
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size-adjust: inherit;
+        padding: 2%;
+        margin: 1%;
+        border-radius: 10px;
+        color: #1b3746;
+        text-align: left;
+
+}
+    
+form{
+    text-align: left;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+form input{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size-adjust: inherit;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 10px;
+    color: #1b3746;
+    text-align: left;
+}
+/*fin nuevo codigo 1 */
+
+/*--css para botones x js */
+
+
+#resulta input{
+    justify-content: space-between; 
+    cursor: pointer;
+    background: #1b3746;
+}
+#resulta input:hover{
+    background-color: #f1f1f1;
+    color: #14113f;
+    
+}
+
+input:disabled {
+  background: #d0e0e9;
+  color: rgb(206, 171, 171);
+}
+#botones input:disabled:hover {
+    background: #1b3746;
+    color: #f1f1f1;
+}
+
+/*css para la Muestra de Informacion Individuales */
+#muestraV{
+    color: rgb(187, 241, 189);
+    font-family: 'Arial Black', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+}
+
+/*---  ---*/
+
+#botones input{
+    position: relative; 
+    align-content: space-between;
+    background: #1b3746;
+    
+}
+
+#botones input:hover {
+    background-color: #f1f1f1;
+    color: #14113f;
+    cursor: pointer;
+}
+
+input{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size-adjust: inherit;
+   padding: 2%;
+   margin: 1%;
+   border-radius: 10px;
+   text-align: center;
+   color: #f2f2f2;
+   
+}
+ /*css para Mostrar la Dinamica que aparece en la muestra de Listado de Estudiantes */   
+#mitabla {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#mitabla td, #mitabla th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#mitabla th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#mitabla tr:nth-child(even){background-color: #f2f2f2;}
+#mitabla tr:nth-child(odd){color: #e4bbbb;}
+
+#mitabla tr:hover {
+    background-color: rgb(189, 152, 152);
+    color: rgb(65, 40, 40);
+}
+
+h1{
+    color: rgb(11, 9, 109);
+     text-align: center;
+}
+
+h2{
+     text-align: center;
+     color: #9abac2;
+}
+
+
+footer{
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+    padding: 0,8%;
+    bottom: 20%;
+    color: rgb(65, 27, 27);
+    background: #C6d5c5;
+    border-radius:  0 0 10px 10px;
+}
